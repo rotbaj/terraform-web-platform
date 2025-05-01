@@ -111,7 +111,7 @@ Now let’s update the permission so that all the user classes will have execute
 
 chmod +x script.sh
 
-![](/Image/4.%20x+chmod.png)
+![](./Image/4.%20x+chmod.png)
 
 The above command uses the chmod command with the +x option to grant execute permission to the file script.sh. The +x option adds the execute permission to the existing permissions for all the user classes.
 
@@ -120,14 +120,14 @@ Now let’s check what the file permissions look like:
 ``` bash
 ls -latr script.sh
 ```
-![](/Image/5.%20ls-latrchomod.png)
+![](./Image/5.%20ls-latrchomod.png)
 
 The same command can be executed to achieve the same result using the numbers approach:
 
 ``` bash 
 chmod 755 script.sh
 ```
-![](/Image/6.%20chmod755.png)
+![](./Image/6.%20chmod755.png)
 
 To add execute permissions for all (user, group, others), you would add 1 to each of the three categories, resulting in 755:
 
@@ -146,7 +146,7 @@ To allow group members and others to read, write, and execute the file, change i
 ``` bash 
 chmod 777 note.txt
 ```
-![](/Image/7.%20note777.png)
+![](./Image/7.%20note777.png)
 
 Now, notice the dash ("-") in the first position represents the file type and not a user class. It indicates that the entry is a regular file. chown command
 
@@ -165,7 +165,7 @@ chown john:developer filename.txt
 ```
 change file owner from `dare` to `john`
 
-![](/Image/8.%20dare.png)
+![](./Image/8.%20dare.png)
 
 It is often necessary to become the superuser to perform important tasks in Linux, but as we know, we should not stay logged in as the superuser. In most Linux distributions, there is a command that can give you temporary access to the superuser’s privileges. This program is called sudo (short for super user) and can be used in those cases when you need to be the superuser for a small number of tasks. To use the superuser privileges, simply type sudo before the command you will be invoking.
 
@@ -173,11 +173,11 @@ It is often necessary to become the superuser to perform important tasks in Linu
 sudo -i
 ```
 
-![](/Image/9.%20root-user.png)
+![](./Image/9.%20root-user.png)
 
 You can type exit to leave the shell:
 
-![](/Image/10%20exit.png)
+![](./Image/10%20exit.png)
 
 #### User Management on Linux
 
@@ -195,7 +195,7 @@ Running this command will prompt you to enter and confirm a password for the new
 
 The home directory represents a file system directory created in the name of the user, such as /home/johndoe. This is where each user created on the server will store their respective data.
 
-![](/Image/11.%20johndoe-user.png)
+![](./Image/11.%20johndoe-user.png)
 
 #### Granting Administrative Privileges
 
@@ -241,7 +241,7 @@ You will be prompted to enter the password for the user. Once authenticated, you
 - To log in as the newly created user `su` command.
 
 
-![](/Image/12.%20switching-users.png)
+![](./Image/12.%20switching-users.png)
 
 ### Modifying users account
 
@@ -254,7 +254,7 @@ sudo passwd johndoe
 ```
 You will be prompted to enter and confirm the new password for the user.
 
-![](/Image/13.%20passwd4jnh.png)
+![](./Image/13.%20passwd4jnh.png)
 
 # Task for You
 
@@ -270,7 +270,7 @@ To create a new group, use the groupadd command. For example, to create a group 
 sudo groupadd developers
 ```
 
-![](/Image/14.%20addgroup.png)
+![](./Image/14.%20addgroup.png)
 
 
 #### Adding Users to the Group
@@ -283,7 +283,7 @@ The -`aG` option append the `developer1` group to the user exiting group members
 sudo usermod -aG developer1 johndoe
 ``` 
 
-![](/Image/15.%20-aG.png)
+![](./Image/15.%20-aG.png)
 
 
 # Verifying Group Membership
@@ -296,7 +296,7 @@ id johndoe
 
 This command displays information about the user "johndoe," including the groups they belong to, such as "developer1 and developers."
 
-![](/Image/15.%20aG.png)
+![](./Image/15.%20aG.png)
 
 # Deleting a user
 
@@ -306,7 +306,7 @@ To delete a user, run the command below:
 sudo userdel username
 ```
 
-![](/Image/17.%20delete.png)
+![](./Image/17.%20delete.png)
 
 
 #### Ensuring Proper Group Permissions
@@ -335,4 +335,4 @@ Create a folder for each user in the /home directory. For example, /home/mary.
 Ensure that the group ownership of each created folder belongs to "devops".
 ```
 
-![](/Image/18.%20create-add.png)
+![](./Image/18.%20create-add.png)
