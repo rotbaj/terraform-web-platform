@@ -64,7 +64,7 @@ When discussing permissions, you might notice hyphens (-) being mentioned. In th
 
 Lets get a bit practical with examples. Get onto your Linux terminal and run ls -latr
 
-![](/Image/1.%20ls-latr.png)
+![](./Image/1.%20ls-latr.png)
 
 Let’s break it down to understand what each part means:
 
