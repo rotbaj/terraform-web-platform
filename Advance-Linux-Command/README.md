@@ -97,12 +97,12 @@ Let’s see an example.
 touch script.sh
 ```
 
-![](/Image/2.%20touch-command.png)
+![](./Image/2.%20touch-command.png)
 
 
 - check the permission of the file
 
-![](/Image/3.%20ls-latr-comand.png)
+![](./Image/3.%20ls-latr-comand.png)
 
 
 #### What do you think the permission of the above output represent?
