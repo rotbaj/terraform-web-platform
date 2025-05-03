@@ -16,4 +16,6 @@ Single-line comment in Bash starts with the `#` symbol. Anything following this 
 
 ![](./Images/1.%20comment.png)
 
+Below is the after result of the above shell script-comment
+
 ![](./Images/2.%20shell%20script%20%20comment.png)
