@@ -63,7 +63,13 @@ It will look like this with a function called **check_num_of_args**
 ``` bash
 #!/bin/bash
 
-check_num_of_args() {"\n# Checking the number of arguments\nif [ \"$#\" -ne 0 ]; then\n    echo \"Usage: $0 <environment>\"\n    exit 1\nfi\n"}
+check_num_of_args() {
+# Checking the number of arguments
+if [ "$#" -ne 0 ]; then
+    echo "Usage: $0 <environment>"
+    exit 1
+fi
+}
 
 # Accessing the first argument
 ENVIRONMENT=$1
