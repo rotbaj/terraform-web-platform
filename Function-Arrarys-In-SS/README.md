@@ -287,7 +287,7 @@ Syntax:
 
 To programmatically create resources on AWS, you need to configure authentication using various means such as environment variable, configuration files, or IAM roles.
 
-The **~/aws/credentials** and **~/aws/config** files are commonly used to store AWS credentials and configuration settings, respectively.
+The **~/.aws/credentials** and **~/.aws/config** files are commonly used to store AWS credentials and configuration settings, respectively.
 
 Running the aws configure command you ran earlier creates these files. You can use the cat command to open them and see the content.
 
@@ -299,7 +299,7 @@ It is formatted as follows:
 
 ### Credentials File (~/.aws/credentials)
 
-- default setting of aws access key and id
+- default setting of aws access key ID and secret access key pair.
 
 ![](./Images/2a.%20aws_credential.png)
 
