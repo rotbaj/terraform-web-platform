@@ -53,7 +53,7 @@ fi
 ```
 - Full multiplication table shown.
 
-[](./Image/1.%20full-multiplication-table.png)
+![](./Image/1.%20full-multiplication-table.png)
 
 
 - Partial multiplication table shown.
