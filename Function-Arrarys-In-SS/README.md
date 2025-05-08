@@ -255,8 +255,14 @@ With this updated version of the code, you can now see how clean the code looks.
  #!/bin/bash
 
 # Function to check if AWS CLI is installed
-check_aws_cli() {"\n    if ! command -v aws &> /dev/null; then\n        echo \"AWS CLI is not installed. Please install it before proceeding.\"\n        return 1\n    fi\n"}
+check_aws_cli() { 
+if ! command -v aws &> /dev/null then        echo "AWS CLI is not installed. Please install it before proceeding.       
+return 1    
+fi
+}
+check_aws_cli
 ```
+
 
 - break down this section of the code;
 
@@ -276,17 +282,6 @@ Redirects output to /dev/null to suppress errors.
 Syntax:
 ```
 
-``` bash
-#!/bin/bash
-
-# Function to check if AWS CLI is installed
-check_aws_cli() { 
-if ! command -v aws &> /dev/null then        echo "AWS CLI is not installed. Please install it before proceeding.       
-return 1    
-fi
-}
-check_aws_cli
-```
 
 ## Check if environment variable exist to authenticate to AWS
 
