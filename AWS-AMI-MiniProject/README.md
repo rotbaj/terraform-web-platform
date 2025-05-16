@@ -80,45 +80,62 @@ In the second part, I will create a group and add two more users, Jack and Ade, 
 
 1. Navigate to the AWS Management console, use the search bar to locate the IAM dashboard.
 
+
 ![](./images/1.%20aws-console.png)
 
+
 2. On the IAM dashboard, click on Policies, search for EC2 and select `AMSEC2FullAccess` from the list of policies, and click on create policy.
+
 
 ![](./images/2.%20policy-EC2.png)
 
 
 3. Select all EC2 actions
 
+
 ![](./images/3.%20all-EC2-Actions.png)
+
 
 4. Select all resources and click Next
 
+
 ![](./images/4.%20all-next.png)
+
 
 5. Click on create policy
 
+
 ![](./images/5.%20create-policy.png)
+
 
 6.  This is the policy we have created
 
+
 ![](./images/6.%20eric-policy-created.png)
+
 
 7. proceed to `User section` and select `Create user`
 
+
 ![](./images/7.%20create-user.png)
+
 
 8. Enter the desire name for the user
 - check the "provide user access to the AWS Management console"
 - set a password f0r the user
 
+
 ![](./images/8.%20eric-user-created.png)
+
 
 9. Click on "Attach policy directory"
 - filter custom managed policy
 -  choose the policy name you created `Eric-Policy`
 - click next
 
+
 ![](./images/9.%20set-permissn-4eric.png)
+
 
 **Note**: 
 - Managed Policies: Made by AWS, used by many.
@@ -126,97 +143,137 @@ In the second part, I will create a group and add two more users, Jack and Ade, 
 - Inline Policies: Made for one specific thing.
 - For further details, please refer to [Policies and permissions in IAM in IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
 
+
 10. Review and create
+
 
 ![](./images/10.%20review%20and%20create.png)
 
+
 11. Download thr csv file and return to user list
+
 
 ![](./images/11.%20downloadcsv.png)
 
+
+
 ## Lets come to part 2
+
 
 12. Click on create user group, and create `Developemnt-Team2 group
 - click create user group
 
+
 ![](./images/12.%20developmet-team.png)
+
 
 13. Create a user name `Jack`
 - provide user access to AWS management console, and other requirements as shown below.
 - click next
 
+
 ![](./images/13.%20Jack-user-added.png)
+
 
 14. select add user in the permission option and select other options as seen below.
 - click next
 
+
 ![](./images/14.jack-added-group.png)
+
 
 15. review and create
 
+
 ![](./images/15.%20review-create.png)
+
 
 16. download jack's csv file
 - click return to user list
 
+
 ![](./images/16.%20downloadJack-csv.png)
+
 
 17. Creating user for `Ade`
 - provide user access to AWS management console, and other requirements as shown below.
 - click next
 
+
 ![](./images/17.%20AdeUserCreated.png)
+
 
 18. select add user in the permission option and select other options as seen below.
 - click next
 
+
 ![](./images/18.%20AdeAddedToGroup.png)
+
 
 19. review and create
 
+
 ![](./images/19.%20AdeReviewCreate.png)
+
 
 20. download Ade's csv file
 - click return to user list
 
+
 ![](./images/AdeDownload-csv.png)
+
 
 21. Navigate to the policices section and select create policy.
 - choose the 2 services EC2 and S3 from the available options
 - EC2 Action choosen
 
+
 ![](./images/20.%20EC2-Actions.png)
+
 
 22. S3 Action choosen
 - click next
 
+
 ![](./images/21.%20S3-Actions.png)
+
 
 23. Enter the policy name and description
 - create policy
 
+
 ![](./images/22.%20create-policy.png)
+
 
 24. Development-Team2 group created
 
+
 ![](./images/23.%20policy-created.png)
+
 
 25. Navigate to the `User group` and select/click `Development-Team2` group
 
+
 ![](./images/24.%20development-UserGroup.png)
+
 
 26. Proceed to permission section the add necessary premissions
 - click on attach policy
 
+
 ![](./images/25.%20AddPermission.png)
+
 
 27. Select `Customer Managed Policy` as the policy type
 - choose the `Development-Team2` policy 
 - click attach policy
 
+
 ![](./images/26.%20Attached-Policy.png)
 
+
 28. Policy has now been attached to the group, granting full permissions to Ec2 and S3 for the group users.
+
 
 ![](./images/27.%20policy-created.png)
 
