@@ -114,7 +114,7 @@ main
 
 # Project Execution
 
-- An empty Ec2 dashboard without Instance launch
+- An empty Ec2 dashboard without Instance
 
 ![](./Images/1.%20emptyEC2.png)
 
