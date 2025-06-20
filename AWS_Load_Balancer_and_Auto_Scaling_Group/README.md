@@ -27,46 +27,45 @@ In this mini project, you will learn how to configure Auto Scaling in AWS with a
 
 - Log in to the AWS Management Console
 
-![](./Images/1.%20EC2-navigation.png)
+![](./Images/1-EC2-navigation.png)
 
 - Navigate to the EC2 service
 - In the left panel, clcik on Lunch Template
 - click create template
 
-![](./Images/2.%20launch-%20template.png)
+![](./Images/2-launch-%20template.png)
 
 - Configure the Launch Template setting, include the AMI, Instance type, and user data
 
-![](./Images/4.%20LTname-description.png)
+![](./Images/4-LTname-description.png)
 
 - Linux AMI Included
 
-![](./Images/5.%20LinuxAMI-included.png)
+![](./Images/5-LinuxAMI-included.png)
 
 - t2.micro instance type and keypair added
 
-![](./Images/6.%20instanceType-keypair.png)
+![](./Images/6-instanceType-keypair.png)
 
 - select security group
 - click on create Launch Template
 
-![](./Images/7.%20securityG-createLT.png)
+![](./Images/7-securityG-createLT.png)
 
 - LT Created successfully
 
-![](./Images/8.%20LT-SuccessfullyCreated.png
-)
+![](./Images/8-LT-SuccessfullyCreated.png)
 
 ## Setup Auto Scaling Group
 
 - In the AWS console, navigate to the EC2
 
-![](./Images/9.%20EC2-autoscaling.png)
+![](./Images/9-EC2-autoscaling.png)
 
 
 - Click on Auto Scaling Group (ASG)
 
-![](./Images/10.%20create-ASG.png)
+![](./Images/10-create-ASG.png)
 
 - provide the ASG informations
 - click next
